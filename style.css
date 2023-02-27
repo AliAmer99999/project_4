@@ -1,0 +1,113 @@
+
+* {
+    
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(212, 45%, 89%);
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.con {
+
+    width: 330px;
+    padding: 15px;
+    height: 490px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.con .img-sec {
+
+    background-image: url(images/image-qr-code.png);
+    background-size: cover;
+    width: 100%;
+    height: 291.58px;
+    border-radius: 10px;
+}
+
+.con .content-sec {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 26%;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.con .content-sec .main-p {
+
+    font-weight: bold;
+    font-size: 1.5em;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.con .content-sec .sub-p {
+
+    text-align: center;
+    font-size: .9em;
+    height: 30px;
+    opacity: .5;
+    width: 90%;
+    line-height: 20px;
+}
+
+@media (max-width:280px) {
+
+    .con {
+        width: 250px;
+        height: 392px;
+    }
+    .con .img-sec {
+        background-size: contain;
+        background-repeat: no-repeat;
+        overflow-y: hidden;
+        height: 216px;
+    }
+    .con .content-sec .main-p {
+        font-size: 1.1em;
+    }
+    .con .content-sec .sub-p {
+        font-size: .7em;
+        line-height: 12px;
+    }
+}
+
+/* The Water Mark (start) */
+
+.watermark {
+
+    z-index: 9999999;
+    position: absolute;
+    left: 11%;
+    transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    font-size: 3em;
+    font-weight: bold;
+    font-family: cursive;
+    opacity: 0.4;
+    bottom: 11%;
+}
+
+@media (max-width:300px) {
+    .watermark {
+        font-size: 2em;
+    }
+}
+
+/* The Water Mark (end) */
